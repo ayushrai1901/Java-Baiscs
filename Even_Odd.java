@@ -15,9 +15,10 @@ It’s an Even number is it’s perfectly divisible by 2 or an Odd number otherw
  }
  */
 
+//Method 1 : Brute Force
 import java.util.Scanner;
 
-public class Even_Odd{
+/*public class Even_Odd{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number: ");
@@ -28,5 +29,15 @@ public class Even_Odd{
             System.out.println("The number is odd : " + num);
         }
 
+    }
+}*/
+
+public class Even_Odd{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println(" Enter the number : ");
+        int num = sc.nextInt();
+        String status = num%2==0 ? "is Even ": " is Odd";
+        System.out.println(num + status);
     }
 }
