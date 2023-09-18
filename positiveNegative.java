@@ -9,3 +9,22 @@ N = 0 then, number is Zero. */
 Method 1: Using Brute Force
 Method 2: Using Nested if-else Statements
 Method 3: Using Ternary Operators */
+import java.util.*;
+import java.util.Scanner;
+
+
+class positiveNegative{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number you want to choose: ");
+        int num = sc.nextInt();
+        //conditions to check if the number is -ve or +ve
+        if(num>0){
+            System.out.println("The number is positive : " + num);
+        }else if(num<0){
+            System.out.println("The number is negative : " + num);
+        }else{
+            System.out.println("The number is zero : "+ num);
+        }
+    }
+}
