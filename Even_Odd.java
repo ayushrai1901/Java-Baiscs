@@ -32,6 +32,7 @@ import java.util.Scanner;
     }
 }*/
 
+//Using Ternary Operator
 public class Even_Odd{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
