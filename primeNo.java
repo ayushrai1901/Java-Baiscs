@@ -13,15 +13,58 @@ A prime number must only be divisible by 1 and the number itself. */
 
 import java.util.Scanner;
 
-public class primeNo {
+/*public class primeNo {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
+    int n=23;
+    checkPrime (n);
+    }
 
-        if(a%2==0){
-            System.out.println("Number is prime: " + a);
-        }else{
-           System.out.println("Number is not prime: " + a); 
+
+    public static void checkPrime(int n){
+        int count =0;
+
+        //negative nos , 0 and 1 are not prime number
+        if(n<2){
+            System.out.println("The given is number " +n + "is not prime");
         }
+
+        for(int i=0;i<=n;i++){
+            if(n%1==0){
+                count +=1;
+            }
+        }
+
+
+        if(count>2)
+        System.out.println("The given number is not prime" + n);e
+        else
+        System.out.println("Given number is prime : "+n);
+    }
+}*/
+
+//PRIME NUMBER FOR GIVEN RANGE
+
+public class primeNo{
+    public static void main(String[] args){
+        int lower =1, upper = 20;
+
+        for(int i =lower; i<=upper;i++){
+            if(isPrime(i))
+            System.out.println(i);
+        }
+    }
+
+    static boolean isPrime(int n){
+       // int count =0;
+
+        if(n<2)
+        return false;
+
+        for(int i=2 ; i<n; i++){
+            if(n%i==0)
+            return false;
+        }
+
+        return true;
     }
 }
