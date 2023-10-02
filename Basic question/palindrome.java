@@ -10,7 +10,6 @@ Method 2: Using Recursion */
         int  num = 1221;
         int reverse =0;
         int rem ;
-        int temp;
         temp = num;
 
         while(num!=0){
