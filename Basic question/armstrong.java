@@ -6,7 +6,7 @@ public class armstrong {
         int temp = num;
         int rem ;
         while(num!=0){
-
+            int 
         }
     }
 
